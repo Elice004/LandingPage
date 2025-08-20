@@ -1,0 +1,236 @@
+@keyframes fadeIn{
+    from{opacity:0;}
+    to {opacity:1;}
+}
+.hero{
+    text-align: center;
+    padding: 20px;
+    background-color: #26aad1;
+}
+body{
+    font-family: 'Alpino',sans-serif;
+    background-color: #f8f8f8;
+    color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    padding: 20px;
+    background-color: #26aad1;
+}
+.navbar{
+    display:flex;
+    position: sticky;
+    top: 15px;
+    left: 150px;
+}
+.navbar a{
+    margin: 15px;
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar a:hover{
+    color: #fed500;
+}
+.title{
+    flex-grow: 1;
+    text-align:unset;
+    color:#1e1e1e;
+}
+.cta:hover{
+    background-color: #fed500;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 10px;
+}
+.product-item{
+    background-color: #e7e3d9;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.product-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.add-to-cart{
+    background-color: #1e1e1e;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.add-to-cart:hover{
+    background-color: #687084;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+footer{
+    text-align:center;
+    padding: 100px;
+    background-color: #26aad1;
+    color: #f8f8f8;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-content div{
+    margin: 10px;
+}
+.footer-content a{
+    color: #f8f8f8;
+    text-decoration: none;
+
+}
+.footer-content a:hover{
+    text-decoration: underline;
+}
+.social-media a{
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+}
+.footer p{
+    margin-top:10px;
+}
+.testimonials {
+    background-color: #F0F0F0; /* Light background */
+    padding: 20px;
+    text-align: center;
+}
+.review {
+    margin: 10px 0;
+}
+.faq-item {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none; 
+}
+
+.faq-answer.active {
+    display: block; 
+}
+.search-bar {
+    margin: 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px; 
+    border: 1px solid #26aad1;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #687084; 
+}
+.menu-toggle {
+    cursor: pointer;
+    padding: 7px;
+    background-color: #1e1e1e;
+    color: #fff;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 240px; 
+    height: 100%; 
+    background-color: #F0F0F0; 
+    padding: none;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s;
+}
+
+.sidebar.open {
+    left: 0; 
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.dropdown {
+    list-style-type: none;
+    padding-left: 20px; 
+    display: none; 
+}
+.testimonials {
+    background-color: #f8f8f8; 
+    padding: 10px 10px; 
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 10px
+}
+.testimony {
+    background-color: #f8f8f8; 
+    padding: 10px 10px; 
+    text-align: center;
+    gap: 10px
+}
+
+.testimony h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.testimonial-card {
+    background-color: #26aad1; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px; 
+    margin: 15px 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05); 
+}
+
+.customer-name {
+    font-weight: bold; 
+    margin-top: 10px; 
+}
